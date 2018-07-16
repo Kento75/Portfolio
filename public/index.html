@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>Riot Animation</title>
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ja_JP">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#B56E96">
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="shortcut icon" href="ADD Icon Route" />
+    <link rel="apple-touch-icon" href="ADD Icon Route" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" href="./stylesheets/font.css" />
+    <link rel="stylesheet" href="./stylesheets/style.css" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-53682384-9"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-53682384-9');
+    </script>
+    <script>
+      if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('./sw.js').then(() => {})
+      }
+    </script>
+  </head>
+  <body>
+    <main id="root">
+      <!--*********************************** load-view **************************************-->
+      <div class="load-view">
+      </div>
+      <!--*********************************** motion-part **************************************-->
+      <div class="motion-part1">
+      </div>
+      <!--*********************************** top-page **************************************-->
+      <article class="top-page">
+        <nav class="top-page__nav">
+          <a href="#" class="nav-li page-link" title="">
+            <img src="" alt="" />
+          </a>
+        </nav>
+      </article>
+      <!--*********************************** other-page **************************************-->
+      <div class="other-page">
+      </div>
+    </main>
+    <script src="./scripts/app.min.js"></script>
+  </body>
+</html>

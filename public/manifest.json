@@ -1,0 +1,15 @@
+{
+  "name": "",
+  "short_name": "",
+  "description": "",
+  "background_color": "#B56E96",
+  "theme_color": "#B56E96",
+  "icons": [
+    {
+      "src": "",
+      "sizes": "100x100",
+      "type": "image/png"
+    }],
+  "start_url": "./?utm_source=homescreen",
+  "display": "standalone"
+}
