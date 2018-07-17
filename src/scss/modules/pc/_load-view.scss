@@ -25,14 +25,20 @@
     position: absolute;
     top: 0; left: 0;
     width: 100%; height: 100%;
-    background-color: $theme-brown;
+    //background-color: $theme-brown;
+    background-color: rgb(107, 107, 230);
 
     .inner {
       position: absolute;
-      top: 20px; left: 20px;
-      width: calc(100% - 40px); height: calc(100% - 40px);
-      background-color: #fff;
-      transform: rotate(-2deg);
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      width: 80%;
+      height: 80%;
+      background-color: rgb(217, 217, 226);
 
       &::before {
         content: ""; display: block;

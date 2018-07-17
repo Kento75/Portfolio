@@ -1,10 +1,10 @@
-const root           = document.getElementById('root')
-const load_view      = document.querySelector('.load-view')
-const motion_part   = document.querySelector('.motion-part')
-const top_page       = document.querySelector('.top-page')
-const other_page     = document.querySelector('.other-page')
+const root = document.getElementById('root')
+const load_view = document.querySelector('.load-view')
+const motion_part = document.querySelector('.motion-part')
+const top_page = document.querySelector('.top-page')
+const other_page = document.querySelector('.other-page')
 const developer_page = document.querySelector('.developer-page')
-const gallery_page   = document.querySelector('.gallery-page')
+const gallery_page = document.querySelector('.gallery-page')
 
 /**
  * 画像のプリロード

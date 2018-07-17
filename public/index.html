@@ -32,20 +32,130 @@
     <main id="root">
       <!--*********************************** load-view **************************************-->
       <div class="load-view">
+        <div class="load-view__bg">
+          <div class="inner">
+            <div></div><div></div><div></div><div></div>
+          </div>
+        </div>
+        <div class="load-view__progress-bar">
+          <img class="icon" src="./images/load-view/load-icon.png" alt="load icon" />
+          <div class="progress-bar"><div></div></div>
+        </div>
+        <div class="load-view__windmill">
+          <div></div><div></div>
+        </div>
+        <div class="load-view__words">
+          <div class="word"></div>
+          <div class="word"></div>
+          <div class="word"></div>
+          <div class="word"></div>
+          <div class="word"></div>
+        </div>
+        <img class="content-name"
+          src="../images/load-view/content-name.svg"
+          alt="add content name"
+        />
+        <div class="load-view__end">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <img class="char-name" src="./images/load-view/hoge.svg" alt="add alt disc" />
+        </div>
       </div>
       <!--*********************************** motion-part **************************************-->
-      <div class="motion-part1">
+      <div class="motion-part">
+        <div class="motion-part__text motion-part__text_type_1">
+          <div></div><div></div><div></div><div></div>
+        </div>
+        <div class="motion-part__text motion-part__text_type_2">
+          <div></div><div></div><div></div><div></div>
+        </div>
+        <img class="motion-part__char"
+          src="./images/motion-part/hoge.svg"
+          alt="add alt disc"
+        />
+        <img class="motion-part__char-name"
+          src="./images/motion-part/hoge.svg"
+          alt="add alt disc"
+        />
+        <div class="motion-part__end">
+          <div class="color-ball color-ball-pink"></div>
+          <div class="color-ball color-ball-blue"></div>
+          <div class="color-ball color-ball-yellow"></div>
+          <div class="color-ball color-ball-purple"></div>
+          <img class="say"
+            src="./images/motion-part/hoge.svg"
+            alt="add alt disc"
+          />
+          <div class="color-bg"></div>
+          <div class="color-ball color-ball-white"></div>
+        </div>
       </div>
       <!--*********************************** top-page **************************************-->
       <article class="top-page">
+        <div class="top-page__bg"></div>
+        <div class="top-page__frame top-page__frame_type_1"></div>
+        <div class="top-page__Kento75"></div>
+        <div class="top-page__frame top-page__frame_type_2"></div>
+        <div class="top-page__Portfolio">
+          <img src="./images/top-page/top-page.png" alt="Kento75 Portfolio" />
+        </div>
+        <div class="top-page__eye"></div>
         <nav class="top-page__nav">
-          <a href="#" class="nav-li page-link" title="">
-            <img src="" alt="" />
+          <a href="#" class="nav-li page-link" title="Profile">
+            <img src="./images/top-page/nav/1.png" alt="Profile" />
+          </a>
+          <a href="#" class="nav-li page-link" title="Works">
+            <img src="./images/top-page/nav/2.png" alt="Works" />
           </a>
         </nav>
       </article>
       <!--*********************************** other-page **************************************-->
       <div class="other-page">
+        <div class="page">
+          <div class="close-btn"></div>
+          <section class="developer-page">
+            <div class="inner">
+              <h2 class="title">
+                <img src="./images/developer-page/label/1.svg" alt="Profile" />
+              </h2>
+              <img class="icon" src="./images/Kento75.png" alt="Kento75" />
+              <h4 class="name">Kento75</h4>
+              <p class="description">
+                TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT<br />
+                TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT<br />
+                TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT<br />
+                TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT
+              </p>
+              <div class="sns-box">
+                <a class="fab fa-github" target="_blank" href="https://github.com/Kento75"></a>
+                <a class="fas fa-globe" target="_blank" href="https://qiita.com/Kento75"></a>
+                <a class="fas fa-globe" target="_blank" href="https://www.npmjs.com/~kento75"></a>
+              </div>
+            </div>
+          </section>
+          <section class="gallery-page">
+            <div class="inner">
+              <h2 class="title">
+                <img src="./images/gallery-page/title.svg" alt="Works" />
+              </h2>
+              <p class="description">
+                TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT<br />
+                TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT<br />
+                TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT
+              </p>
+              <div class="img-box">
+                <a class="img" target="_blank" href="./images/gallery-page/1.png"></a>
+                <a class="img" target="_blank" href="./images/gallery-page/2.png"></a>
+                <a class="img" target="_blank" href="./images/gallery-page/3.png"></a>
+                <a class="img" target="_blank" href="./images/gallery-page/4.png"></a>
+              </div>
+            </div>
+          </section>
+        </div>
       </div>
     </main>
     <script src="./scripts/app.min.js"></script>
