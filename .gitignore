@@ -4,3 +4,4 @@ public/scripts/app.min.js
 public/stylesheets/style.css
 .env
 .VScode/
+package-lock.json
