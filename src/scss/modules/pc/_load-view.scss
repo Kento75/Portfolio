@@ -29,14 +29,10 @@
 
     .inner {
       position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
+      top: 0; right: 0; bottom: 0; left: 0;
       margin: auto;
-      width: 80%;
-      height: 80%;
-      background-color: rgb(217, 217, 226);
+      height: 80%; width: 80%;
+      background-color: rgb(215, 215, 223);
 
       &::before {
         content: ""; display: block;
@@ -44,7 +40,7 @@
         left: 20px; top: 20px;
         width: calc(100% - 40px); height: calc(100% - 40px);
         box-sizing: border-box;
-        border: dashed 2px $theme-light-brown;
+        border: outset 2px rgb(141, 141, 223);
       }
 
       div {
@@ -54,7 +50,7 @@
         &::before,
         &::after {
           content: ""; display: block;
-          position: absolute; background-color: $theme-light-brown;
+          position: absolute; background-color: rgb(120, 10, 163);
         }
         &::before { width: 100%; height: 4px; }
         &::after  { width: 4px; height: 100%; }
@@ -89,15 +85,15 @@
     }
 
     .progress-bar {
-      width: 240px; height: 3px;
+      width: 320px; height: 10px;
       margin: 0 auto;
       margin-top: 20px;
-      background-color: #eee;
+      background-color: rgb(229, 229, 233);
       overflow: hidden;
 
       div {
         width: 100%; height: 100%;
-        background-color: $theme-brown;
+        background-color: rgb(124, 124, 218);
         transform: translateX(-100%);
       }
     }
@@ -119,16 +115,16 @@
         position: absolute; top: 0;
         width: 5px; height: 100%;
         box-sizing: border-box;
-        border-left: dashed 5px #fff;
+        border-left: dotted 40px rgb(226, 105, 105);
       }
     }
     div:nth-child(1) {
-      background-color: $theme-light-pink;
+      background-color: rgb(156, 169, 224);
       transform: translateY(-100%);
       &::before { right: 30px; }
     }
     div:nth-child(2) {
-      background-color: $theme-light-yellow;
+      background-color: rgb(189, 72, 212);
       transform: translateY(100%);
       &::before { left: 30px; }
     }
@@ -145,11 +141,21 @@
       float: left;
       width: 100px; height: 100px;
       margin-right: 10px;
+      border-radius: 50%;
       box-shadow: 0 0 0px rgba(0,0,0,0.1);
 
       &::before,
-      &::after  { content: ""; display: block; position: absolute; }
-      &::before { left: 0; width: 100%; height: 500%; opacity: 0; }
+      &::after  {
+        content: "";
+        display: block;
+        position: absolute;
+      }
+      &::before {
+        left: 0;
+        width: 100%;
+        height: 500%;
+        opacity: 0;
+      }
       &::after {
         top: 0; left: 0;
         width: 100%; height: 100%;
@@ -160,26 +166,26 @@
       }
     }
     .word:nth-child(2n) { margin-top: 10px; }
-    .word:last-child    { margin-right: 0px; }
+    .word:last-child { margin-right: 0px; }
 
     .word:nth-child(1) {
-      &::before { bottom: 100px; background-color: $theme-light-pink; }
+      &::before { bottom: 100px; border-radius: 50%; background-color: rgb(167, 167, 236); }
       &::after  { background-image: url(../images/load-view/words/1.svg); }
     }
     .word:nth-child(2) {
-      &::before { top: 100px; background-color: $theme-light-orange; }
+      &::before { top: 100px; border-radius: 50%; background-color: rgb(226, 225, 143); }
       &::after  { background-image: url(../images/load-view/words/2.svg); }
     }
     .word:nth-child(3) {
-      &::before { bottom: 100px; background-color: $theme-light-yellow; }
+      &::before { bottom: 100px; border-radius: 50%; background-color: rgb(218, 94, 94); }
       &::after  { background-image: url(../images/load-view/words/3.svg); }
     }
     .word:nth-child(4) {
-      &::before { top: 100px; background-color: $theme-light-pink; }
+      &::before { top: 100px; border-radius: 50%; background-color: rgb(203, 122, 219); }
       &::after  { background-image: url(../images/load-view/words/4.svg); }
     }
     .word:nth-child(5) {
-      &::before { bottom: 100px; background-color: $theme-light-orange; }
+      &::before { bottom: 100px; border-radius: 50%; background-color: rgb(131, 228, 144); }
       &::after  { background-image: url(../images/load-view/words/5.svg); }
     }
 
