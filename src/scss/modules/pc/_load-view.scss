@@ -214,12 +214,12 @@
     }
     div:nth-child(2n - 1) { transform-origin: right top; transform: rotate(90deg); }
     div:nth-child(2n)     { transform-origin: left bottom; transform: rotate(90deg); }
-    div:nth-child(1) { background-color: $theme-light-pink; z-index: 1; }
-    div:nth-child(2) { background-color: $theme-light-orange; z-index: 2; }
-    div:nth-child(3) { background-color: $theme-light-yellow; z-index: 3; }
-    div:nth-child(4) { background-color: $theme-light-purple; z-index: 4; }
-    div:nth-child(5) { background-color: $theme-light-green; z-index: 5; }
-    div:nth-child(6) { background-color: #c7e5ef; z-index: 7; }
+    div:nth-child(1) { background-color: rgb(167, 167, 236); z-index: 1; }
+    div:nth-child(2) { background-color: rgb(226, 225, 143); z-index: 2; }
+    div:nth-child(3) { background-color: rgb(218, 94, 94); z-index: 3; }
+    div:nth-child(4) { background-color: rgb(203, 122, 219); z-index: 4; }
+    div:nth-child(5) { background-color: rgb(131, 228, 144); z-index: 5; }
+    div:nth-child(6) { background-color: rgb(117, 226, 217); z-index: 7; }
     
     .char-name {
       display: block;
