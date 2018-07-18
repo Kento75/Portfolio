@@ -170,23 +170,23 @@
 
     .word:nth-child(1) {
       &::before { bottom: 100px; border-radius: 50%; background-color: rgb(167, 167, 236); }
-      &::after  { background-image: url(../images/load-view/words/1.svg); }
+      &::after  { background-image: url(../images/load-view/logos/Golang-icon.svg); }
     }
     .word:nth-child(2) {
       &::before { top: 100px; border-radius: 50%; background-color: rgb(226, 225, 143); }
-      &::after  { background-image: url(../images/load-view/words/2.svg); }
+      &::after  { background-image: url(../images/load-view/logos/PHP-icon.svg); }
     }
     .word:nth-child(3) {
       &::before { bottom: 100px; border-radius: 50%; background-color: rgb(218, 94, 94); }
-      &::after  { background-image: url(../images/load-view/words/3.svg); }
+      &::after  { background-image: url(../images/load-view/logos/React-icon.png); }
     }
     .word:nth-child(4) {
       &::before { top: 100px; border-radius: 50%; background-color: rgb(203, 122, 219); }
-      &::after  { background-image: url(../images/load-view/words/4.svg); }
+      &::after  { background-image: url(../images/load-view/logos/Ruby-icon.svg); }
     }
     .word:nth-child(5) {
       &::before { bottom: 100px; border-radius: 50%; background-color: rgb(131, 228, 144); }
-      &::after  { background-image: url(../images/load-view/words/5.svg); }
+      &::after  { background-image: url(../images/load-view/logos/Python-icon.svg); }
     }
 
     &::after { content: ""; display: block; clear: both; }
