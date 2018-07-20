@@ -5,7 +5,7 @@
     width: 100%; height: 100%;
     min-width: $min-width;
     min-height: $min-height;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     overflow: hidden;
     z-index: 7;
   }
@@ -24,12 +24,13 @@
       width: 100%; height: 100%;
     }
     &::before {
-      background-image: url(../images/top-page/bg-dot.svg);
+      background-image: url(../images/top-page/bg-stripe.svg);
       background-size: 120px;
       opacity: 0.5;
     }
     &::after {
-      background-image: url(../images/top-page/bg-dog.svg);
+      // TODO : いい感じの
+      //background-image: url(../images/top-page/bg-stripe_____.svg);
       background-size: 200px;
       opacity: 0;
     }
@@ -40,7 +41,7 @@
     position: absolute;
     width: 150%; height: 50%;
     box-shadow: 0 0 30px rgba(0,0,0,0.3) inset;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.884);
     transform: rotate(0deg);
   }
   .top-page__frame_type_1 {
@@ -52,28 +53,16 @@
     transform-origin: left top;
   }
 
-  /*** yui ***/
-  .top-page__yui {
+  /*** octocat ***/
+  .top-page__octocat {
     position: absolute;
     top: 0; left: 0;
     width: 100%; height: 100%;
-    background-image: url(../images/top-page/yui.svg);
+    background-image: url(../images/top-page/github-octocat.svg);
     background-size: auto 120%;
     background-position: center top;
     background-repeat: no-repeat;
     opacity: 0;
-  }
-
-  /*** happy-birthday ***/
-  .top-page__happy-birthday {
-    position: absolute;
-    bottom: 30px; left: 30px;
-    
-    img {
-      display: block;
-      width: 48%;
-      opacity: 0;
-    }
   }
 
   /*** eye ***/
@@ -86,7 +75,7 @@
     &::after {
       content: ""; display: block;
       width: 100%; height: 50%;
-      background-color: #000;
+      background-color: rgb(0, 0, 0);
     }
     &::before { transform: translateY(-100%); }
     &::after  { transform: translateY(100%); }
@@ -120,12 +109,10 @@
   .top-page[data-state="start"] {
     .top-page__bg { &::after { animation: top-page__show-bg 0.05s ease 0.55s forwards; } }
 
-    .top-page__yui { animation: fadein 0.05s ease 1.75s forwards; }
+    .top-page__octocat { animation: fadein 0.05s ease 1.75s forwards; }
 
     .top-page__frame_type_1,
     .top-page__frame_type_2 { animation: top-page__show-frame 2s ease 2.4s forwards; }
-
-    .top-page__happy-birthday img { animation: top-page__show-happy-birthday 2s ease 2.6s forwards; }
 
     .top-page__eye {
       &::before { animation: slide-bottom 0.6s ease-in-out 0s 4 alternate; }
@@ -135,7 +122,7 @@
     .top-page__nav {
       .nav-li:nth-child(1) img { animation: slide-left 0.5s ease 3s forwards; }
       .nav-li:nth-child(2) img { animation: slide-left 0.5s ease 3.1s forwards; }
-      .nav-li:nth-child(3) img { animation: slide-left 0.5s ease 3.2s forwards; }
+      .nav-li:nth-child(3) img { animation: slide-left 0.5s ease 3.1s forwards; }
     }
   }
 }
